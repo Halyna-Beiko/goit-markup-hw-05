@@ -45,9 +45,9 @@ img {
     /* outline: 2px solid red; */
 }
 
-.section {
+/* .section {
 
-}
+} */
 
 .title {
     font-size: 36px;
@@ -61,14 +61,13 @@ img {
 .link {
     text-decoration: none;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:is(:hover, :focus){
     color: var(--pressed-color)
 }
 
-.btn {
+/* .btn {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -80,7 +79,7 @@ img {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+} */
 
 .btn:is(:hover, :focus){
     color: var(--second-accent-color);
@@ -122,7 +121,7 @@ img {
     padding: 24px 0;
         
     border-bottom: 1px solid #E7E9FC;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 
 .header-container{
@@ -162,6 +161,8 @@ img {
 .header-link {
     color: var(--accent-color);
     position: relative;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:is(:hover, :focus) {
@@ -169,7 +170,7 @@ img {
 }
 
 .emphasis{
-    
+    color: #404BBF;
 }
 
 .emphasis::after{
@@ -195,7 +196,7 @@ img {
     gap: 40px;
 }
 
-.address-item {}
+/* .address-item {} */
 
 .address-contact {
     color: var(--text-color);
@@ -223,8 +224,8 @@ img {
 
 }
 
-.hero-container {
-}
+/* .hero-container {
+} */
 
 .hero-title {
     font-size: 56px;
@@ -260,7 +261,7 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
-    transition: backgroun-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:is(:hover, :focus) {
@@ -276,8 +277,8 @@ img {
     padding: 120px 0;
 }
 
-.features-container{
-}
+/* .features-container{
+} */
 
 .hidden {
     position: absolute;
@@ -315,15 +316,15 @@ img {
     margin-bottom: 8px;
 }
 
-.icon {
+/* .icon {
 
-}
+} */
 
 .features-title {
     margin-bottom: 8px;
 }
 
-.features-text {}
+/* .features-text {} */
 
 /*-------------------------What are we doing-------------------------*/
 
@@ -331,8 +332,8 @@ img {
     padding: 0 0 120px 0;
 }
 
-.our-work-container{
-}
+/* .our-work-container{
+} */
 
 .our-work-title {
     margin-bottom: 72px;
@@ -343,10 +344,10 @@ img {
     gap: 24px;
 }
 
-.our-work-item {}
+/* .our-work-item {}
 
 
-.our-work-pic {}
+.our-work-pic {} */
 
 /*-------------------------Our Team-------------------------*/
 
@@ -355,7 +356,7 @@ img {
     padding: 120px 0;
 }
 
-.our-team-container{}
+/* .our-team-container{} */
 
 .our-team-title {
     margin-bottom: 72px;
@@ -425,13 +426,13 @@ img {
 
 }
 
-.team-social-icon {
+/* .team-social-icon {
     
 }
 
 .icon {
     
-}
+} */
 
 /*-------------------------Customers-------------------------*/
 
@@ -440,9 +441,9 @@ img {
 }
 
 
-.customers-containet {
+/* .customers-containet {
 
-}
+} */
 
 
 .customers-title {
@@ -493,19 +494,19 @@ img {
     border-color: var(--pressed-color);
 }
 
-.customers-logo{
+/* .customers-logo{
     
 
-}
+} */
 
 /* .customers-logo {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 } */
-
+/* 
 .icon {
 
-}
+} */
 
 
 /*-------------------------Footer-------------------------*/
@@ -600,13 +601,13 @@ img {
 }
 
 
-.footer-social-icon {
+/* .footer-social-icon {
 
 }
 
 .icon {
 
-}
+} */
 
 /*-------------------------Portfolio-------------------------*/
 
@@ -615,8 +616,8 @@ img {
     padding-bottom: 120px;
 }
 
-.portfolio-container{
-}
+/* .portfolio-container{
+} */
 
 /*-----------Portfolio - Functional/*-----------*/
 
@@ -632,9 +633,18 @@ margin-bottom: 72px;
 /* outline: 2px solid red; */
 }
 
-.portfolio-functional-item {}
+/* .portfolio-functional-item {} */
 
 .portfolio-functional-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: var(--primary-brand-color);
+    background-color: var(--main-btn-backgroudcolor);
+
     padding: 12px 24px;
 
     border: 1px solid #E7E9FC;
@@ -665,10 +675,10 @@ margin-bottom: 72px;
     gap: 48px 24px;
 }
 
-.portfolio-item {
+/* .portfolio-item {
     
 
-}
+} */
 
 
 /* .portfolio-item {
@@ -742,13 +752,13 @@ margin-bottom: 72px;
 }
 
 
-.portfolio-pic {}
+/* .portfolio-pic {} */
 
 .portfolio-title {
     margin-bottom: 8px;
 }
 
-.portfolio-text {}
+/* .portfolio-text {} */
 
 
 /*-------------------------Other-------------------------*/
@@ -804,6 +814,7 @@ margin-bottom: 72px;
     width: 24px;
     height: 24px;
     right: 24px;
+    cursor: pointer;
 
 
     border-radius: 50%;
